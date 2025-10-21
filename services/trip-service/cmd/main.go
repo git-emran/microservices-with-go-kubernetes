@@ -6,6 +6,7 @@ import (
 	"ride-sharing/services/trip-service/internal/domain"
 	"ride-sharing/services/trip-service/internal/infrastructure/repository"
 	"ride-sharing/services/trip-service/internal/service"
+	"time"
 )
 
 func main() {
@@ -21,4 +22,10 @@ func main() {
 	}
 
 	log.Println(t)
+
+	//keeps the program running for now
+
+	for {
+		time.Sleep(time.Second)
+	}
 }
